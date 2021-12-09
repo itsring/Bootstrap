@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <script src="./js/bootstrap.bundle.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1>BootStrap5의 Form태그 사용하기</h1>
+      <!-- 
+        from 태그에 클래스를 설정하는 것은 아님
+        bootstrap이 input 태그의 디자인을 미리 디자인함
+        텍스트 입력에 관련된 클래스는 form-control
+        label태그의 디자인을 form-label을 통해서 변경함
+        input 태그 위에 label태그가 올라간 형태의 디자인을 구성할 수 있음
+        bootstrap의 input 태그 디자인은 display-block 타입으로 되어있음 적층구조로 되어있음
+        label과 input태그를 하나의 div 태그로 묶어서 사용
+        
+        -->
+      <form action="#">
+        <div class="row">
+          <div class="col-4 mx-auto border p-5">
+            <h2>Kakao</h2>
+            <div class="my-3">
+              <input
+                type="text"
+                class="form-control-plaintext border-bottom"
+                placeholder="ID를 입력해 주세요"
+              />
+            </div>
+            <div class="my-3">
+              <input
+                type="password"
+                class="form-control-plaintext border-bottom"
+                placeholder="PASSWORD를 입력해 주세요"
+              />
+            </div>
+            <div class="my-3">
+              <label for="contents" class="form-label">comment :</label>
+              <textarea
+                name="contents"
+                id="contents"
+                cols="5"
+                rows="5"
+                class="form-control"
+              ></textarea>
+            </div>
+            <div class="my-3 d-grid">
+              <button class="btn btn-warning">로그인</button>
+              <hr />
+              <button class="btn btn-secondary">회원가입</button>
+            </div>
+          </div>
+        </div>
+      </form>
+      <form action="#">
+        <div class="my-3">
+          <label for="" class="form-label">작은 크기의 input 태그</label>
+          <input type="text" class="form-control form-control-sm" />
+        </div>
+        <div class="my-3">
+          <label for="" class="form-label">기본 크기의 input 태그</label>
+          <input type="text" class="form-control" />
+        </div>
+        <div class="my-3">
+          <label for="" class="form-label">큰 크기의 input 태그</label>
+          <input type="text" class="form-control form-control-lg" />
+        </div>
+        <br />
+        <div>
+          <label for="" class="form-label">plain textbox 사용하기</label>
+          <input
+            type="text"
+            class="form-control-plaintext"
+            placeholder="plain textbox 사용하기"
+          />
+        </div>
+        <!--
+             inline input 태그 사용 
+            inline input 태그는 grid system을 이용하여 화면에 구현
+            bs5에서 inline input의 사용방법이 변경됨
+            div를 선언하고 class에 row를 사용
+            row의 자식 태그로 div태그를 선언하고 class에 col-auto를 사용하여 구현함
+            label 태그와 input 태그를 각각의 div태로 감싸서 사용
+            label태그의 class를 col-form-label로 사용함
+            -->
+        <div class="row my-3">
+          <div class="col-auto">
+            <label for="" class="col-form-label">ID : </label>
+          </div>
+          <div class="col-auto">
+            <input type="text" class="form-control" />
+          </div>
+          <div class="col-auto">
+            <label for="" class="col-form-label">PW : </label>
+          </div>
+          <div class="col-auto">
+            <input type="text" class="form-control" />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>

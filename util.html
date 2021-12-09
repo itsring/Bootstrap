@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+    <!--
+    text= text
+    backgroound = bg
+    link = link 
+    -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,6 +30,9 @@
         <p class="text-dark">text-dark</p>
         <p class="text-white bg-dark">text-white</p>
       </div>
+      <br />
+      <hr />
+      <br />
       <div>
         <h3>링크 테마 컬러</h3>
         <a href="#">기본 링크</a>
@@ -38,6 +46,311 @@
         <a href="#" class="link-dark">link-dark</a>
         <a href="#" class="link-white bg-dark">link-white</a>
       </div>
+      <br />
+      <hr />
+      <br />
+      <div>
+        <h3>텍스트 불투명도</h3>
+        <h3 class="text-black-50">검정색 불투명도 50%</h3>
+        <h3 class="text-white-50 bg-dark">흰색 불투명도 50%</h3>
+        <h3 class="text-primary text-opacity-25">primary 불투명도 25%</h3>
+        <h3 class="text-primary text-opacity-50">primary 불투명도 50%</h3>
+        <h3 class="text-primary text-opacity-75">primary 불투명도 75%</h3>
+        <h3 class="text-primary text-opacity-100">primary 불투명도 100%</h3>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div>
+        <h3 class="">배경 테마 색상</h3>
+        <h3 class="bg-primary text-white">primary 색상</h3>
+        <h3 class="bg-secondary text-white">secondary 색상</h3>
+        <h3 class="bg-success text-white">success 색상</h3>
+        <h3 class="bg-info text-white">info 색상</h3>
+        <h3 class="bg-warning text-white">warning 색상</h3>
+        <h3 class="bg-danger text-white">danger 색상</h3>
+        <h3 class="bg-light">light 색상</h3>
+        <h3 class="bg-dark text-white">dark 색상</h3>
+        <h3 class="bg-body">body 색상</h3>
+        <h3 class="bg-white">white 색상</h3>
+        <h3 class="bg-transparent">transparent 색상</h3>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div>
+        <h3>배경 불 투명도</h3>
+        <div class="border bg-primary bg-opacity-10">불투명 10%</div>
+        <div class="border bg-primary bg-opacity-25">불투명 25%</div>
+        <div class="border bg-primary bg-opacity-50">불투명 50%</div>
+        <div class="border bg-primary bg-opacity-75">불투명 75%</div>
+        <div class="border bg-primary bg-opacity-100">불투명 100%</div>
+      </div>
+      <br />
+      <hr />
+      <br />
+
+      <div>
+        <h3>부트스트랩의 여백 사용방법</h3>
+        <div class="pt-4 bg-warning">pt-4로 padding-top 1.5rem설정</div>
+        <div class="p-5 bg-success">
+          p-5로 padding start, top, end, bottom에 3rem설정 1.5rem설정
+        </div>
+        <div class="m-5 pb-5 bg-info">
+          m5로 margin start, end, top,top bottom에 3rem설정, pb-5로
+          padding-botom에 3rem설정
+        </div>
+      </div>
+
+      <br />
+      <hr />
+      <br />
+      <div>
+        <h3>디스플레이 클래스</h3>
+        <div>
+          <span class="bg-primary d-block">상자1</span>
+          <span class="bg-success d-block"> 상자2</span>
+          <span class="bg-info d-none d-md-block">상자 3</span>
+        </div>
+        <div>
+          <div class="bg-primary d-inline">상자1</div>
+          <div class="bg-success d-inline">상자2</div>
+          <div class="bg-info d-inline">상자 3</div>
+        </div>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div>
+        <h3>border 클래스 사용</h3>
+        <span
+          class="d-inline-block m-2 border"
+          style="width: 100px; height: 100px"
+        ></span>
+        <span
+          class="d-inline-block m-2 border border-0"
+          style="width: 100px; height: 100px"
+        ></span>
+        <span
+          class="d-inline-block m-2 border border-1"
+          style="width: 100px; height: 100px"
+        ></span>
+        <span
+          class="d-inline-block m-2 border border-2"
+          style="width: 100px; height: 100px"
+        ></span>
+        <span
+          class="d-inline-block m-2 border border-3"
+          style="width: 100px; height: 100px"
+        ></span>
+        <span
+          class="d-inline-block m-2 border border-4"
+          style="width: 100px; height: 100px"
+        ></span>
+        <span
+          class="d-inline-block m-2 border border-5"
+          style="width: 100px; height: 100px"
+        ></span>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <h3>지정 위치에만 border 사용</h3>
+      <span
+        class="d-inline-block m-2 border-top"
+        style="width: 100px; height: 100px"
+      ></span>
+      <span
+        class="d-inline-block m-2 border-bottom"
+        style="width: 100px; height: 100px"
+      ></span>
+      <span
+        class="d-inline-block m-2 border-start"
+        style="width: 100px; height: 100px"
+      ></span>
+      <span
+        class="d-inline-block m-2 border-end"
+        style="width: 100px; height: 100px"
+      ></span>
+      <h3>지정한 위치만 border 삭제</h3>
+      <span
+        class="d-inline-block m-2 border border-top-0"
+        style="width: 100px; height: 100px"
+      ></span>
+      <span
+        class="d-inline-block m-2 border border-bottom-0"
+        style="width: 100px; height: 100px"
+      ></span>
+      <span
+        class="d-inline-block m-2 border border-start-0"
+        style="width: 100px; height: 100px"
+      ></span>
+      <span
+        class="d-inline-block m-2 border border-end-0"
+        style="width: 100px; height: 100px"
+      ></span>
+
+      <br />
+      <hr />
+      <br />
+      <h3>border 테마 색상 사용</h3>
+      <span
+        class="d-inline-block m-2 border border-primary"
+        style="width: 100px; height: 100px"
+      ></span>
+      <span
+        class="d-inline-block m-2 border border-secondary"
+        style="width: 100px; height: 100px"
+      ></span>
+      <span
+        class="d-inline-block m-2 border border-success"
+        style="width: 100px; height: 100px"
+      ></span>
+      <span
+        class="d-inline-block m-2 border border-info"
+        style="width: 100px; height: 100px"
+      ></span>
+      <span
+        class="d-inline-block m-2 border border-warning"
+        style="width: 100px; height: 100px"
+      ></span>
+      <span
+        class="d-inline-block m-2 border border-danger"
+        style="width: 100px; height: 100px"
+      ></span>
+      <span
+        class="d-inline-block m-2 border border-light bg-dark bg-opacity-10"
+        style="width: 100px; height: 100px"
+      ></span>
+      <span
+        class="d-inline-block m-2 border border-dark"
+        style="width: 100px; height: 100px"
+      ></span>
+      <span
+        class="d-inline-block m-2 border border-white bg-dark bg-opacity-10"
+        style="width: 100px; height: 100px"
+      ></span>
+      <br />
+      <hr />
+      <br />
+      <div>
+        <h3>border-radius 사용하기(rounded)</h3>
+        <span
+          style="width: 100px; height: 100px"
+          class="rounded bg-dark d-inline-block m-2"
+        ></span>
+        <br />
+        <span
+          style="width: 100px; height: 100px"
+          class="rounded-start bg-dark d-inline-block m-2"
+        ></span>
+        <span
+          style="width: 100px; height: 100px"
+          class="rounded-top bg-dark d-inline-block m-2"
+        ></span>
+        <span
+          style="width: 100px; height: 100px"
+          class="rounded-end bg-dark d-inline-block m-2"
+        ></span>
+        <span
+          style="width: 100px; height: 100px"
+          class="rounded-bottom bg-dark d-inline-block m-2"
+        ></span>
+        <br />
+        <span
+          style="width: 100px; height: 100px"
+          class="rounded-circle bg-dark d-inline-block m-2"
+        ></span>
+        <span
+          style="width: 150px; height: 100px"
+          class="rounded-pill bg-dark d-inline-block m-2"
+        ></span>
+        <br />
+        <span
+          style="width: 100px; height: 100px"
+          class="rounded-0 bg-dark d-inline-block m-2"
+        ></span>
+        <span
+          style="width: 100px; height: 100px"
+          class="rounded-1 bg-dark d-inline-block m-2"
+        ></span>
+        <span
+          style="width: 100px; height: 100px"
+          class="rounded-2 bg-dark d-inline-block m-2"
+        ></span>
+        <span
+          style="width: 100px; height: 100px"
+          class="rounded-3 bg-dark d-inline-block m-2"
+        ></span>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div>
+        <h3>미리 설정된 width, height 사용</h3>
+        <div class="border border-primary m-3" style="width: 500px">
+          <div class="w-25 bg-warning">w-25사용</div>
+          <div class="w-50 bg-warning">w-50 사용</div>
+          <div class="w-75 bg-warning">w-75 사용</div>
+          <div class="w-100 bg-warning">w-100 사용</div>
+          <div class="w-auto bg-warning">w-auto 사용</div>
+          <div class="mw-100 bg-warning">mw-100 사용</div>
+        </div>
+        <div
+          class="border border-success m-3"
+          style="width: 500px; height: 300px"
+        >
+          <div class="h-25 bg-warning d-inline-block">h-25사용</div>
+          <div class="h-50 bg-warning d-inline-block">h-50 사용</div>
+          <div class="h-75 bg-warning d-inline-block">h-75 사용</div>
+          <div class="h-100 bg-warning d-inline-block">h-100 사용</div>
+          <div class="h-auto bg-warning d-inline-block">h-auto 사용</div>
+          <div class="mh-100 bg-warning d-inline-block" style="height: 200px">
+            mh-100 사용
+          </div>
+          <!--
+               mh-100 : 높이 지정을 안해주면 content 크기가 본인의 최대 높이가 됨 
+            -->
+        </div>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div>
+        <h3>그림자 효과 사용</h3>
+        <div class="shadow-none p-4 mb-4 bg-light">그림자 없음</div>
+        <div class="shadow-sm p-4 mb-4 bg-light">작은 그림자</div>
+        <div class="shadow p-4 mb-4 bg-light">그림자</div>
+        <div class="shadow-lg p-4 mb-4 bg-light">큰 그림자</div>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div>
+        <h3>visible/invisible</h3>
+        <!-- 
+              css의 visibility 속성을 사용
+              visible, hidden을 사용한 것과 같은 효과
+         -->
+        <div class="bg-primary visible">visible 사용</div>
+        <div class="bg-primary invisible">invisible 사용</div>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div>
+        <h3>클로즈버튼 아이콘</h3>
+        <!--
+              기존의 bs4 까지의 클로즈 버튼은 HTML 특수기호 문자 & times를 사용하여 표현했음
+              현재, bootstrap5 에서는 클로즈 버튼을 위한 아이콘이 따로 추가됨
+              btn-close
+           -->
+        <button type="button" class="btn">&times</button>
+        <!-- 기존 방식 -->
+        <button class="btn btn-close"></button>
+        <!-- 요즘 방식 -->
+      </div>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </div>
   </body>
 </html>
