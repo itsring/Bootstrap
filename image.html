@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <script src="./js/bootstrap.bundle.js"></script>
+    <title>Document</title>
+    <style>
+      #div01 {
+        height: 30%;
+        width: 30%;
+      }
+      /* img {
+        width: 200px;
+      } */
+      /* clear를 사용하기 위해서는 원래 부모태그에 이렇게 줘야함
+      div::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      */
+    </style>
+  </head>
+  <body>
+    <div id="div01" class="container mt-5">
+      <div>
+        <img src="./images/고양고양.jpg" alt="" class="rounded border" />
+
+        <img src="./images/고양고양.jpg" alt="" class="rounded-circle" />
+
+        <img src="./images/고양고양.jpg" alt="" class="img-thumbnail" />
+      </div>
+      <div>
+        <h3>이미지의 정렬</h3>
+        <div class="clearfix">
+          <img src="./images/고양고양.jpg" alt="" class="float-start" />
+          <img src="./images/고양고양.jpg" alt="" class="float-end" />
+        </div>
+        <hr />
+        <h3>이미지 중앙 정렬</h3>
+        <div class="border">
+          <img src="./images/고양고양.jpg" alt="" class="d-block mx-auto" />
+        </div>
+        <br />
+        <div class="border text-center">
+          <img src="./images/고양고양.jpg" alt="" class="" />
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <h3>반응형 이미지</h3>
+      <img
+        src="./images/고양고양.jpg"
+        alt=""
+        class="img-fluid"
+        width="1125"
+        height="675"
+      />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <script src="./js/bootstrap.bundle.js"></script>
+    <title>Document</title>
+    <style>
+      .div01 > .p1 {
+        font-size: 16px;
+      }
+      .div01 > .p2 {
+        font-size: 1em;
+      }
+      .div01 > .p3 {
+        font-size: 1rem;
+      }
+      .div01 > .p4 {
+        font-size: 100%;
+      }
+      .div02 > .p1 {
+        font-size: 24px;
+      }
+      .div02 > .p2 {
+        font-size: 1.5em;
+      }
+      .div02 > .p3 {
+        font-size: 1.5rem;
+      }
+      .div02 > .p4 {
+        font-size: 150%;
+      }
+      .div03 > .p1 {
+        font-size: 32px;
+      }
+      .div03 > .p2 {
+        font-size: 2em;
+      }
+      .div03 > .p3 {
+        font-size: 2rem;
+      }
+      .div03 > .p4 {
+        font-size: 200%;
+      }
+
+      .div04 > .p1 {
+        font-size: 2em;
+      }
+      .div04 > .sub01 > .p1 {
+        font-size: 2em;
+      }
+      .div04 > .sub01 > .subsub01 > .p1 {
+        font-size: 2em;
+      }
+      .div04 > .p2 {
+        font-size: 2rem;
+      }
+      .div04 > .sub02 > .p2 {
+        font-size: 2rem;
+      }
+      .div04 > .sub02 > .subsub02 > .p2 {
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <!--
+       em : 부모태그의 font-size의 배수계산 
+       rem : HTML 태그의 font-size의 배수계산
+-->
+  <body>
+    <div class="div01">
+      <p class="p1">px사용시</p>
+      <p class="p2">em 사용시</p>
+      <p class="p3">rem 사용시</p>
+      <p class="p4">%만 사용시</p>
+    </div>
+    <hr />
+    <div class="div02">
+      <p class="p1">px사용시</p>
+      <p class="p2">em 사용시</p>
+      <p class="p3">rem 사용시</p>
+      <p class="p4">%만 사용시</p>
+    </div>
+    <hr />
+    <div class="div03">
+      <p class="p1">px사용시</p>
+      <p class="p2">em 사용시</p>
+      <p class="p3">rem 사용시</p>
+      <p class="p4">%만 사용시</p>
+    </div>
+    <hr />
+    <div class="div04">
+      <p class="p1">2em 사용시</p>
+      <div class="sub01">
+        <p class="p1">2em 사용시</p>
+        <div class="subsub01">
+          <p class="p1">2em 사용시</p>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="div04">
+      <p class="p2">2rem사용</p>
+      <div class="sub02">
+        <p class="p2">2rem 사용시</p>
+        <div class="subsub02">
+          <p class="p2">2rem 사용시</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

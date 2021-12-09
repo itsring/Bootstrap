@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <script src="./js/bootstrap.bundle.js"></script>
+    <title>Document</title>
+    <style>
+      .border {
+        border: 1px solid black !important;
+      }
+      ul {
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="text-center bg-info rounded-3 p-5 mt-3">
+        <!-- 
+        bg - backgound  info - 하늘색
+        rounded - border-둥글게 - 0~3
+        p - padding 
+        mt : margin top
+       -->
+        <h2>grid 시스템을 이용한 레이아웃</h2>
+      </header>
+      <main class="row mt-3">
+        <aside class="col-md-2">
+          <!-- md = medium : 768px이상 -->
+          <ul class="nav flex-column p-3">
+            <li class="nav-item">
+              <a href="#" class="nav-link">링크1</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">링크2</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">링크3</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">링크4</a>
+            </li>
+          </ul>
+        </aside>
+        <section class="col-md-10">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+            consectetur voluptate accusantium nisi distinctio aspernatur nam
+            reiciendis! Suscipit quia tempore, velit quod accusantium numquam
+            magni minima? Consequuntur labore dolor sunt?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+            consectetur voluptate accusantium nisi distinctio aspernatur nam
+            reiciendis! Suscipit quia tempore, velit quod accusantium numquam
+            magni minima? Consequuntur labore dolor sunt?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+            consectetur voluptate accusantium nisi distinctio aspernatur nam
+            reiciendis! Suscipit quia tempore, velit quod accusantium numquam
+            magni minima? Consequuntur labore dolor sunt?
+          </p>
+        </section>
+      </main>
+      <hr />
+      <footer class="text-center">
+        <p class="lead">여기는 푸터입니다.</p>
+      </footer>
+    </div>
+  </body>
+</html>

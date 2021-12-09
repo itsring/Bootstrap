@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <script src="./js/bootstrap.bundle.js"></script>
+    <title>Document</title>
+    <style>
+      .border {
+        border: 1px solid black !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h3>container에서 그리드 시스템 사용</h3>
+      <div class="row">
+        <div class="col border">col</div>
+        <div class="col border">col</div>
+        <div class="col border">col</div>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <div class="container-fluid mt-3">
+      <h3>container-fluid에서 grid 시스템 사용</h3>
+
+      <div class="row">
+        <div class="col border">col 1~12 까지 지정</div>
+        <div class="col border">col 총 합이 12</div>
+        <div class="col border">col 12가 넘어가면 화면밖으로 감</div>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <div class="container mt-3">
+      <h3>col은 12개 까지</h3>
+      <div class="row">
+        <div class="col-1 border">col-1</div>
+        <div class="col-1 border">col-2</div>
+        <div class="col-1 border">col-3</div>
+        <div class="col-1 border">col-4</div>
+        <div class="col-1 border">col-5</div>
+        <div class="col-1 border">col-6</div>
+        <div class="col-1 border">col-7</div>
+        <div class="col-1 border">col-8</div>
+        <div class="col-1 border">col-9</div>
+        <div class="col-1 border">col-10</div>
+        <div class="col-1 border">col-11</div>
+        <div class="col-1 border">col-12</div>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-1 border">col-1</div>
+        <div class="col-1 border">col-2</div>
+        <div class="col-1 border">col-3</div>
+        <div class="col-1 border">col-4</div>
+        <div class="col-1 border">col-5</div>
+        <div class="col-1 border">col-6</div>
+        <div class="col-1 border">col-7</div>
+        <div class="col-1 border">col-8</div>
+        <div class="col-1 border">col-9</div>
+        <div class="col-1 border">col-10</div>
+        <div class="col-1 border">col-11</div>
+        <div class="col-1 border">col-12</div>
+        <!-- 13, 14는 다음 라인으로 넘어감 -->
+        <div class="col-1 border">col-13</div>
+        <div class="col-1 border">col-14</div>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <div class="container mt-3">
+      <h3>col을 2씩 사용</h3>
+      <div class="row">
+        <div class="col-2 border">col 1</div>
+        <div class="col-2 border">col 2</div>
+        <div class="col-2 border">col 3</div>
+        <div class="col-2 border">col 4</div>
+        <div class="col-2 border">col 5</div>
+        <div class="col-2 border">col 6</div>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <div class="container mt-3">
+      <h3>col을 3씩 사용</h3>
+      <div class="row">
+        <div class="col-3 border">col 1</div>
+        <div class="col-3 border">col 2</div>
+        <div class="col-3 border">col 3</div>
+        <div class="col-3 border">col 4</div>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <div class="container mt-3">
+      <h3>col을 4씩 사용</h3>
+      <div class="row">
+        <div class="col-4 border">col 1</div>
+        <div class="col-4 border">col 2</div>
+        <div class="col-4 border">col 3</div>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <div class="container mt-3">
+      <h3>col을 6씩 사용</h3>
+      <div class="row">
+        <div class="col-6 border">col 1</div>
+        <div class="col-6 border">col 2</div>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <div class="container mt-3">
+      <h3>col을 4,8로 나누어 사용</h3>
+      <div class="row">
+        <div class="col-4 border">col 1</div>
+        <div class="col-8 border">col 2</div>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <div class="container mt-3">
+      <h3>col을 전체크기로 사용</h3>
+      <div class="row">
+        <div class="col-12 border">col 1</div>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <div class="container mt-3">
+      <h3>col을 12로 맞추지 않았을 경우</h3>
+      <div class="row">
+        <div class="col-4 border">col 1</div>
+        <div class="col-3 border">col 2</div>
+        <div class="col-2 border">col 3</div>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <div class="container mt-3">
+      <h3>col을 3-3-3(비우기)-3 offset을 사용하여 구현</h3>
+      <div class="row">
+        <div class="col-3 border">col 1</div>
+        <div class="col-3 border">col 2</div>
+        <!-- <div class="col-3 border">col 3</div> -->
+        <div class="col-3 offset-3 border">col 4</div>
+        <!-- 
+            반응형 웹을 지원하기 때문에 sm,md,lg,xl,xxl 사용가능
+            비울 콜의 크기만큼 offset-에 적으면 됨 
+            비우고싶은곳 뒤에 offset을 줘야함
+        -->
+      </div>
+    </div>
+    <br />
+    <hr />
+    <div class="container mt-3">
+      <h3>컨텐츠를 중앙에 배치하기</h3>
+      <div class="row">
+        <div class="col-4 border"></div>
+        <div class="col-4 border text-center">
+          <p>문자가 중앙에 위치</p>
+        </div>
+        <div class="col-4 border"></div>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <div class="container mt-3">
+      <h3>col을 12로 맞추지 않고 중앙 정렬하기</h3>
+      <div class="row">
+        <div class="col-4 border text-center mx-auto">
+          <!-- div중앙에 위치 mx-auto -->
+          <p>문자가 중앙에 위치</p>
+          <!-- text-center -->
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>
