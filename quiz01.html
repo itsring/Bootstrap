@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <script src="./js/bootstrap.bundle.js"></script>
+    <title>Bootstrap Homepage clone</title>
+  </head>
+  <body class="bg-light">
+    <div class="container">
+      <header class="text-center py-5">
+        <h1
+          class="rounded-3 text-white text-center mx-auto"
+          style="width: 50px; height: 50px; background-color: purple"
+        >
+          B
+        </h1>
+        <h2>Checkout form</h2>
+        <p class="lead">
+          Below is an example form built entirely with Bootstrap’s form
+          controls. Each required form group has a validation state that can be
+          triggered by attempting to submit the form without completing it.
+        </p>
+      </header>
+      <main class="row g-5">
+        <aside class="col-md-5 col-lg-5 order-md-last">
+          <h4
+            class="
+              d-flex
+              justify-content-between
+              align-items-center
+              mb-3text-primary
+            "
+          >
+            <span class="text-primary"> Your cart</span>
+            <span class="badge bg-primary text-center rounded-pill text-white"
+              >3</span
+            >
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Product name</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$12</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Second product</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$8</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Third item</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div class="text-success">
+                <h6 class="my-0 text-success">Product name</h6>
+                <small class="text-muted text-success">Brief description</small>
+              </div>
+              <span class="text-muted text-success">$12</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (USD)</span>
+              <strong>$20</strong>
+            </li>
+          </ul>
+          <form class="card p-2">
+            <!-- <span>라벨 대신 스팬태그 사용</span> -->
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Promo code"
+              />
+              <button type="submit" class="btn btn-secondary">Redeem</button>
+            </div>
+          </form>
+        </aside>
+        <section class="col-md-7 col-lg-7">
+          <h3>Billing address</h3>
+          <form action="">
+            <div class="row my-3">
+              <div class="col-6">
+                <label for="" class="col-form-label">First name </label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="col-6">
+                <label for="" class="col-form-label">Last name</label>
+                <input type="password" class="form-control" />
+              </div>
+            </div>
+            <div>
+              <label for="" class="form-label">Username </label>
+              <div class="input-group">
+                <!-- <span>라벨 대신 스팬태그 사용</span> -->
+                <span class="input-group-text">@ </span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Username"
+                />
+              </div>
+            </div>
+            <div class="my-3">
+              <label for="" class="form-label"
+                >Email
+                <span class="text-muted">(Optional)</span>
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="you@example.com"
+              />
+            </div>
+            <div class="my-3">
+              <label for="" class="form-label">Address </label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="1234 main St"
+              />
+            </div>
+            <div class="my-3">
+              <label for="" class="form-label"
+                >Address2 <span class="text-muted">(Optional)</span>
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="1234 main St"
+              />
+            </div>
+            <div class="row my-3">
+              <div class="col-5 my-3">
+                <label for="" class="form-label">Select Box</label>
+                <select class="form-select">
+                  <option value="Choose...">Choose...</option>
+                  <option value="United State">United State</option>
+                </select>
+              </div>
+              <div class="col-4 my-3">
+                <label for="" class="form-label">Select Box</label>
+                <select class="form-select">
+                  <option value="California">California</option>
+                  <option value="Choose...">Choose...</option>
+                </select>
+              </div>
+              <div class="col-3 my-3">
+                <label for="" class="form-label">Zip </label>
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <hr />
+            <div class="form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="check1"
+                value="Shipping address is the same as my billing address"
+              />
+              <label for="check1" class="form-check-label"
+                >Shipping address is the same as my billing address</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="check2"
+                value="Save this information for next time"
+              />
+              <label for="check2" class="form-check-label"
+                >Save this information for next time</label
+              >
+            </div>
+
+            <hr />
+            <div class="form-check">
+              <input
+                type="radio"
+                class="form-check-input"
+                id="radio1"
+                name="radio"
+                value="Credit card"
+                checked
+              />
+              <label for="radio1" class="form-check-label">Credit card</label>
+            </div>
+            <div class="form-check">
+              <input
+                type="radio"
+                class="form-check-input"
+                id="radio1"
+                name="radio"
+                value="Debit card"
+              />
+              <label for="radio1" class="form-check-label">Debit card</label>
+            </div>
+            <div class="form-check">
+              <input
+                type="radio"
+                class="form-check-input"
+                id="radio1"
+                name="radio"
+                value="PayPal"
+              />
+              <label for="radio1" class="form-check-label">PayPal</label>
+            </div>
+            <div class="row my-3">
+              <div class="col-6">
+                <label for="" class="col-form-label">Name on card</label>
+                <input type="text" class="form-control" />
+                <label for="" class="col-form-label"
+                  ><span class="text-muted"
+                    >Full name as displayed on card</span
+                  ></label
+                >
+              </div>
+              <div class="col-6">
+                <label for="" class="col-form-label">Credit card number</label>
+                <input type="password" class="form-control" />
+              </div>
+              <div class="row my-3">
+                <div class="col-6">
+                  <div class="row">
+                    <div class="col-6">
+                      <label for="" class="col-form-label">Expiration</label>
+                      <input type="password" class="form-control" />
+                    </div>
+                    <div class="col-6">
+                      <label for="" class="col-form-label">CVV</label>
+                      <input type="password" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div>
+                <button class="col-12 btn btn-primary p-3">
+                  <h4>Continue to checkout</h4>
+                </button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </main>
+      <footer class="text-center">
+        <p>© 2017–2021 Company Name</p>
+        <a href="">Privacy</a>
+        <a href="">Terms</a>
+        <a href="">Support</a>
+      </footer>
+    </div>
+  </body>
+</html>
