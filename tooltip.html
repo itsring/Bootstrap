@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        // 지정한 문자열을 가지고 있는 태그를 불러와서 필요한 부분만 사용
+        // 배열을 생성하여 사용
+        var tooltipTriggerList = [].slice.call(
+          document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        );
+
+        // map 함수는 콜백함수로 실행된 내용을 배열로 생성
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          // 부트스트랩에서 생성한 함수인 Tooltip을 실행
+          // tooltip 기능을 사용하는 태그에 이벤트를 생성하여 배열에 저장
+          return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+
+        var popoverTirggerList = [].slice.call(
+          document.querySelectorAll('[data-bs-toggle="popover"]')
+        );
+
+        var btn = document.querySelector("#btn-toast");
+        btn.addEventListener("click", function () {
+          var popoverList = popoverTirggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl);
+          });
+
+          var toastElList = [].slice.call(document.querySelectorAll(".toast"));
+          var toastList = toastElList.map(function (toastEl) {
+            return new bootstrap.Toast(toastEl);
+          });
+
+          toastList.forEach((toast) => toast.show());
+        });
+      });
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div>
+        <h3>tooltip 사용하기</h3>
+        <div>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="tooltip"
+            title="tooltip사용"
+          >
+            버튼
+          </button>
+          <div
+            class="bg-success border"
+            style="width: 200px; height: 100px"
+            data-bs-toggle="tooptip"
+            title="div에 tooltip사용"
+          ></div>
+        </div>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="tooltip"
+          title="왼쪽에 출력"
+          data-bs-placement="left"
+        >
+          좌측
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="tooltip"
+          title="위쪽에 출력"
+          data-bs-placement="top"
+        >
+          상단
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="tooltip"
+          title="우측에 출력"
+          data-bs-placement="right"
+        >
+          우측
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="tooltip"
+          title="아래에 출력"
+          data-bs-placement="bottom"
+        >
+          하단
+        </button>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <h3>popover 사용하기</h3>
+      <div>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="popover"
+          title="popover 제목"
+          data-bs-content="popover의 본문 영역 tooltip보다 많은 내용을 출력가능"
+        >
+          클릭시 popover
+        </button>
+      </div>
+      <div class="d-flex justify-content-center">
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="popover"
+          data-bs-content="왼쪽에 출력되는 popover"
+          title="popover 제목"
+          data-bs-placement="left"
+        >
+          좌측
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="popover"
+          data-bs-content="상단에 출력되는 popover"
+          title="popover 제목"
+          data-bs-placement="top"
+        >
+          상단
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="popover"
+          data-bs-content="오른에 출력되는 popover"
+          title="popover 제목"
+          data-bs-placement="right"
+        >
+          우측
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="popover"
+          data-bs-content="하단에 출력되는 popover"
+          title="popover 제목"
+          data-bs-placement="bottom"
+        >
+          하단
+        </button>
+      </div>
+      <br />
+
+      <br />
+      <div>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="popover"
+          data-bs-content="다른곳을 클릭해도 자동으로 사라지는 popover"
+          title="popover 제목"
+          data-bs-placement="left"
+          data-bs-trigger="focus"
+        >
+          버튼 클릭 후 다른곳 클릭
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="popover"
+          data-bs-content="마우스 hover시에만 출력되는 popover"
+          title="popover 제목"
+          data-bs-placement="top"
+          data-bs-trigger="hover"
+        >
+          마우스 hover시 출력
+        </button>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div>
+        <h3>toast 사용하기</h3>
+        <div>
+          <div class="toast show">
+            <div class="toast-header">
+              <strong class="me-auto">toast 헤더 영역</strong>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="toast"
+              ></button>
+            </div>
+            <div class="toast-body">
+              <p>toast 바디 영역</p>
+
+              <p>toast를 사용하여 alert 창으로 사용하기</p>
+            </div>
+          </div>
+          <br />
+          <div>
+            <button type="button" class="btn btn-primary" id="btn-toast">
+              클릭시 toast 출력
+            </button>
+            <div class="toast">
+              <div class="toast-header">
+                <strong class="me-auto">toast 헤더 영역</strong>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="toast"
+                ></button>
+              </div>
+
+              <div class="toast-body">
+                <p>toast 바디영역</p>
+                <p>버튼 클릭시 출력되는 toast</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
