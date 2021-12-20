@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <script src="./js/bootstrap.bundle.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>carousel</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid"></div>
+      <nav
+        class="navber navbar-expand-md bg-dark navbar-dark text-white fixed-top"
+      >
+        <div class="container-fluid d-flex mb-2 mt-2">
+          <a href="#" class="navbar-brand">Carousel</a>
+
+          <div
+            class="
+              collapse
+              navbar-collapse
+              d-flex
+              justify-content-between
+              text-center
+              align-items-center
+            "
+            id="navbarCollapse"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link active "
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link "
+                  >Link</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link disabled"
+                  >Disalbed</a
+                >
+              </li>
+            </ul>
+
+            <form class="d-flex">
+              <input
+                type="search"
+                class="form-control me-2"
+                placeholder="Search"
+              />
+              <button type="submit" class="btn btn-outline-success">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+    </header>
+    <div class="container">
+      <main>
+        <div>
+          <div
+            id="div-carousel"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
+            <!-- 인디케이터 -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#div-carousel"
+                data-bs-slide-to="0"
+                class="active"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#div-carousel"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#div-carousel"
+                data-bs-slide-to="2"
+              ></button>
+            </div>
+
+            <!-- 슬라이더 -->
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="1000">
+                <img
+                 style="max-height: 700;"
+                  src="./images/image4.jpg"
+                  alt=""
+                  class="d-block w-100"
+                />
+                <div class="container">
+                  <div class="carousel-caption text-start">
+                    <h2>Example headline.</h2>
+                    <p>
+                      Some representative placeholder content for the first
+                      slide of the carousel.
+                    </p>
+                    <p>
+                      <button type="submit" class="btn btn-primary btn-lg">
+                        Sign up today
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img
+                style="max-height: 700;"
+                  src="./images/image5.jpg"
+                  alt=""
+                  class="d-block w-100"
+                />
+                <div class="container">
+                  <div class="carousel-caption text-center">
+                    <h2>Example headline.</h2>
+                    <p>
+                      Some representative placeholder content for the first
+                      slide of the carousel.
+                    </p>
+                    <p>
+                      <button type="submit" class="btn btn-primary btn-lg">
+                        Sign up today
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img
+                style="max-height: 700;"
+                  src="./images/image6.jpg"
+                  alt=""
+                  class="d-block w-100"
+                />
+                <div class="container">
+                  <div class="carousel-caption text-end">
+                    <h2>Example headline.</h2>
+                    <p>
+                      Some representative placeholder content for the first
+                      slide of the carousel.
+                    </p>
+                    <p>
+                      <button type="submit" class="btn btn-primary btn-lg">
+                        Sign up today
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- 컨트롤 -->
+              <button
+                type="button"
+                class="carousel-control-prev"
+                data-bs-target="#div-carousel"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#div-carousel"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+           
+          </div>
+        </div>
+        <div class="row m-5 mt-5 ">
+          <div
+            class="
+              col-lg-4
+              me-auto
+              text-center
+             
+            "
+          >
+            <div
+              style="
+                width: 120px;
+                height: 120px;
+                border: 0px solid black;
+                border-radius: 60px;
+                background-color: #777777;
+              "
+              class="mx-auto"
+            ></div>
+            <h2>Heading</h2>
+            <p>
+              Some representative placeholder content for the three columns of
+              text below the carousel. This is the first column.
+            </p>
+            <button type="submit" class="btn btn-secondary btn-lg">
+              View details >>
+            </button>
+          </div>
+          <div class="col-lg-4 me-auto text-center align-items-center">
+            <div
+              style="
+                width: 120px;
+                height: 120px;
+                border: 0px solid black;
+                border-radius: 60px;
+                background-color: #777777;
+              "class="mx-auto"
+            ></div>
+            <h2>Heading</h2>
+            <p>
+              Some representative placeholder content for the three columns of
+              text below the carousel. This is the first column.
+            </p>
+            <button type="submit" class="btn btn-secondary btn-lg">
+              View details >>
+            </button>
+          </div>
+          <div
+            class="
+            col-lg-4
+              me-auto
+              text-center
+              justify-content-center
+              align-content-center align-items-center
+            "
+            
+          >
+            <div
+              style="
+                width: 120px;
+                height: 120px;
+                border: 0px solid black;
+                border-radius: 60px;
+                background-color: #777777;
+              "
+              class="
+              mx-auto
+                d-flex
+                justify-content-center
+                text-center
+                align-items-center
+              "
+            >
+              .
+            </div>
+            <h2>Heading</h2>
+            <p>
+              Some representative placeholder content for the three columns of
+              text below the carousel. This is the first column.
+            </p>
+            <button type="submit" class="btn btn-secondary btn-lg">
+              View details >>
+            </button>
+          </div>
+        </div>
+        <div class="container">
+        <div class="d-flex justify-content-center align-items-center border-top">
+          <div class="">
+            <h1>Oh yeah, its that good</h1>
+            <h2 class="text-secondary">See for yourself</h2>
+            <p>
+              Another featurette? Of course. More placeholder content here to
+              give you an idea of how this layout would work with some actual
+              real-world content in place.
+            </p>
+          </div>
+          <div
+            style="width: 300px; height: 300px; background-color: #eeeeee"
+            class="
+              m-3
+              justify-content-center
+              align-items-center
+              text-center
+              d-flex
+            "
+          >
+            <h1 class="text-muted">500x500</h1>
+          </div>
+        </div>
+        
+        <div class="d-flex justify-content-center align-items-center border-top">
+          <div
+            style="width: 300px; height: 300px; background-color: #eeeeee"
+            class="
+              m-3
+              justify-content-center
+              align-items-center
+              text-center
+              d-flex
+            "
+          >
+            <h1 class="text-muted">500x500</h1>
+          </div>
+          <div class="">
+            <h1>Oh yeah, its that good</h1>
+            <h2 class="text-secondary">See for yourself</h2>
+            <p>
+              Another featurette? Of course. More placeholder content here to
+              give you an idea of how this layout would work with some actual
+              real-world content in place.
+            </p>
+          </div>
+        </div>
+     
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="text-end">
+            <h1>Oh yeah, its that good</h1>
+            <h2 class="text-secondary">See for yourself</h2>
+            <p>
+              Another featurette? Of course. More placeholder content here to
+              give you an idea of how this layout would work with some actual
+              real-world content in place.
+            </p>
+          </div>
+          <div
+            style="width: 300px; height: 300px; background-color: #eeeeee"
+            class="
+              m-3
+              justify-content-center
+              align-items-center
+              text-center
+              d-flex
+            "
+          >
+            <h1 class="text-muted">500x500</h1>
+          </div>
+        </div>
+      </div>
+      </main>
+    </div>
+    <footer class="container clearfix py-5 border-top">
+      <p class="mb-1">
+        &copy; 2017-2021 Company, lnc. <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </p>
+      <div class="float-end">
+        <a href="#">Back to top</a>
+      </div>
+    </footer>
+  </body>
+</html>
